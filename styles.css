@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --primary-color: #0077b6;
+    --secondary-color: #caf0f8;
+    --text-color: #03045e;
+    --btncolor: #46b4f0;
+    --background-color: #f0f0f0;
+    --font-family: Arial, sans-serif;
+    --border-radius: 14px;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: grid;
+    grid-template-rows: auto 1fr;
+    min-height: 100vh;
+}
+
+.header {
+    background-color: var(--primary-color);
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    padding: 1rem;
+}
+
+.header_title {
+    font-size: 1.5rem;
+}
+
+.header_button, .modal_submit {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: 1rem;
+    transition: .2s ease;
+}
+
+.modal_submit:hover {
+    background-color: var(--btncolor);
+}
+
+.header_button:hover {
+    background-color: var(--btncolor);
+    color: white;
+}
+
+.main {
+    display: grid;
+    place-items: center;
+    padding: 2rem;
+}
+
+.main_content,
+.main_profile {
+    background: white;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#perfilForm{
+    height: 500px;
+    background: white;
+    border-radius: var(--border-radius);
+    display: grid;
+    width: 600px;
+    padding: 10px;
+    text-align: center;
+}
+
+input{
+    border-radius: var(--border-radius);
+    outline: none;
+    border: 2px solid var(--primary-color);
+    text-align: center;
+}
+
+label{
+    margin-top: 25px;
+}
